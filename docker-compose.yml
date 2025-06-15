@@ -34,8 +34,6 @@ services:
     depends_on:
       - db
       - rabbitmq
-    expose:
-      - "8003"
     volumes:
       - ./staticfiles:/opt/patrowl-manager/staticfiles
       - ./media:/opt/patrowl-manager/media
